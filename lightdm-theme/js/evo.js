@@ -105,12 +105,7 @@ function set_user(user) {
     }
     if (user) lightdm.start_authentication(user.name);
     set_session(currentUser.session ? lightdm.sessions.find(s => s.key === currentUser.session) : currentSession || lightdm.default_session);
-    if (user.name === "ryozk" || 1===1) {
-        $("avatar").src = "./static/ryozk.png";
-    }
-    else {
-        $("avatar").src = user.image;
-    }
+    $("avatar").src = "./static/ryoh.png";
     $("name").textContent = user.display_name;
     $("password-box").focus();
 }
