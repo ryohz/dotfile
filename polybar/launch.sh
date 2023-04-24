@@ -1,6 +1,5 @@
 killall -q polybar
-echo "---" | tee -a /tmp/mybar0.log /tmp/mybar1.log
-polybar mybar0 2>&1 | tee -a /tmp/mybar0.log & disown
-polybar mybar1 2>&1 | tee -a /tmp/mybar1.log & disown
+echo "---" | tee -a /tmp/b1.log
+polybar b1 2>&1 | tee -a /tmp/b1 & disown
 echo "launch..."
 
